@@ -1,0 +1,86 @@
+<?php
+    $sub_menu = "200300";
+    require_once './_common.php';
+    require_once G5_EDITOR_LIB;
+
+    auth_check_menu($auth, $sub_menu, 'r');
+
+    $html_title = '회원메일';
+
+    $ma_id = isset($_GET['ma_id']) ? (int) $_GET['ma_id'] : 0;
+    $ma = array('ma_id' => 0, 'ma_subject' => '', 'ma_content' => '');
+
+    if ($w == 'u') {
+        $html_title .= '수정';
+        $readonly = ' readonly';
+
+        $sql = " select * from {$g5['mail_table']} where ma_id = '{$ma_id}' ";
+        $ma = sql_fetch($sql);
+        if (!$ma['ma_id']) {
+            alert('등록된 자료가 없습니다.');
+        }
+    } else {
+        $html_title .= '입력';
+    }
+
+    $g5['title'] = $html_title;
+    require_once './admin.head.php';
+?>
+
+<div class="admin-notice-div">
+    메일 내용에 {이름} , {닉네임} , {회원아이디} , {이메일} 처럼 내용에 삽입하면 해당 내용에 맞게 변환하여 메일을 발송합니다.
+</div>
+
+
+<form name="fmailform" id="fmailform" action="./mail_update.php" onsubmit="return fmailform_check(this);" method="post">
+    <input type="hidden" name="w" value="<?php echo $w ?>" id="w">
+    <input type="hidden" name="ma_id" value="<?php echo $ma['ma_id'] ?>" id="ma_id">
+    <input type="hidden" name="token" value="" id="token">
+
+    <div class="margin-div"></div>
+    <ul class="formList">
+        <li>
+            <div class="label">메일 제목<span class="red">*</span></div>
+            <div class="iptBox">
+                <input type="text" name="ma_subject" value="<?php echo get_sanitize_input($ma['ma_subject']); ?>" id="ma_subject" required class="ipt" size="100">
+            </div>
+        </li>
+        <li>
+            <div class="label">메일 내용<span class="red">*</span></div>
+            <div class="iptBox">
+                <?php echo editor_html("ma_content", get_text(html_purifier($ma['ma_content']), 0)); ?>
+            </div>
+        </li>
+    </ul>
+
+    <div class="adm-btn-div">
+      <a href="./mail_list.php" class="adm-btn" accesskey="s">목록</a>
+      <input type="submit" value="확인" class="submit-btn adm-btn" accesskey="s">
+    </div>
+</form>
+
+<script>
+    function fmailform_check(f) {
+        errmsg = "";
+        errfld = "";
+
+        check_field(f.ma_subject, "제목을 입력하세요.");
+        //check_field(f.ma_content, "내용을 입력하세요.");
+
+        if (errmsg != "") {
+            alert(errmsg);
+            errfld.focus();
+            return false;
+        }
+
+        <?php echo get_editor_js("ma_content"); ?>
+        <?php echo chk_editor_js("ma_content"); ?>
+
+        return true;
+    }
+
+    document.fmailform.ma_subject.focus();
+</script>
+
+<?php
+require_once './admin.tail.php';
