@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!-- 패럴렉스 -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/common/logo.svg" alt="JB법무법인">
+                    </a>
+                </div>
+                <nav class="gnb">
+                    <ul class="gnb-list">
+                        <li><a href="#necessity">필요성</a></li>
+                        <li><a href="#difference">차별성</a></li>
+                        <li><a href="#portfolio">포트폴리오</a></li>
+                        <li><a href="#development">개발과정</a></li>
+                        <li><a href="#maintenance">유지보수 게시판</a></li>
+                        <li><span>개인 결제</span></li>
+                        <li><a href="#contact">문의하기</a></li>
+                    </ul>
+                    <button class="mobile-menu-btn" aria-label="메뉴 열기">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-menu-list">
+                <li><a href="#necessity">필요성</a></li>
+                <li><a href="#difference">차별성</a></li>
+                <li><a href="#portfolio">포트폴리오</a></li>
+                <li><a href="#development">개발과정</a></li>
+                <li><a href="#maintenance">유지보수 게시판</a></li>
+                <li><span>개인 결제</span></li>
+                <li><a href="#contact">문의하기</a></li>
+            </ul>
+        </div>
+        <main id="smooth-wrapper">
+            <article id="smooth-content">
+                
+                <main class="sec_top">
+                    <article class="boardArti basicBoardArti">
+                        <div class="inner">
+                            <div class="boardBanner">
+                                <div class="t1">Apply</div>
+                                <div class="t2">문의</div>
+                            </div>
+                            <div class="menuBox">
+                                <ul class="menuList">
+                                    <li>
+                                        <a href="#" class="item"><img src="./img/boardImg/settings.png" alt="관리자"/> <p class="txt">관리자</p></a>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="item"><img src="./img/boardImg/search.png" alt="검색"/> <p class="txt">검색</p></button>
+                                        <div class="subMenu">
+                                            <div class="searchBox">
+                                                <select class="searchList">
+                                                    <option value="제목">제목</option>
+                                                    <option value="내용">내용</option>
+                                                </select>
+                                                <div class="iptBox">
+                                                    <input type="text" placeholder="검색어를 입력해주세요." class="ipt"/>
+                                                    <button class="searchBtn"><img src="./img/boardImg/search.png" alt="검색"/></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="./write.html" class="item"><img src="./img/boardImg/write.png" alt="글쓰기"/> <p class="txt">글쓰기</p></a>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="item"><img src="./img/boardImg/threedot.png" alt="편집"/> <p class="txt">편집</p></button>
+                                        <ul class="subMenu">
+                                            <li><button type="button" class="item">선택삭제</button></li>
+                                            <li><a href="#" class="item2">선택복사</a></li>
+                                            <li><a href="#" class="item2">선택이동</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+            
+                            <ul class="basicList">
+                                <li class="boardTitle">
+                                    <div class="item">
+                                        <div class="chk center">
+                                            <label class="allchk">
+                                                <input type="checkbox" />
+                                            </label>
+                                        </div>
+                                        <div class="number center">번호</div>
+                                        <div class="title center">제목</div>
+                                        <div class="writer center">글쓴이</div>
+                                        <div class="hit center">조회수</div>
+                                        <div class="date center">등록일</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="chk center"><input type="checkbox" /></div>
+                                        <div class="number center on">공지</div>
+                                        <div class="title">
+                                            <a href="./view.html">제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.</a>
+                                        </div>
+                                        <div class="writer center">최고관리자 최고관리자 최고관리자 최고관리자</div>
+                                        <div class="hit center">9,9999,9999,999</div>
+                                        <div class="date center">10-12-10-12 10-12-10-12</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="chk center"><input type="checkbox" /></div>
+                                        <div class="number center on">공지</div>
+                                        <div class="title">
+                                            <div class="iconWrap">
+                                                <img src="./img/boardImg/replyIcon.png" alt="답변" class="icon"/>
+                                            </div>
+                                            <a href="./view.html">제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.</a>
+                                        </div>
+                                        <div class="writer center">최고관리자</div>
+                                        <div class="hit center">9,999</div>
+                                        <div class="date center">10-12</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="chk center"><input type="checkbox" /></div>
+                                        <div class="number center on">공지</div>
+                                        <div class="title">
+                                            <div class="iconWrap">
+                                                <img src="./img/boardImg/replyIcon.png" alt="답변" class="icon"/>
+                                                <img src="./img/boardImg/secret.png" alt="비밀" class="icon" />
+                                            </div>
+                                            <a href="./view.html">제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.</a>
+                                        </div>
+                                        <div class="writer center">최고관리자</div>
+                                        <div class="hit center">9,999</div>
+                                        <div class="date center">10-12</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="chk center"><input type="checkbox" /></div>
+                                        <div class="number center">10</div>
+                                        <div class="title">
+                                            <a href="./view.html">제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.</a>
+                                            <div class="iconWrap">
+                                                <img src="./img/boardImg/heart.png" alt="HOT" class="icon"/>
+                                                <img src="./img/boardImg/file.png" alt="파일" class="icon" />
+                                                <img src="./img/boardImg/link.png" alt="링크" class="icon" />
+                                                <span class="reple">24</span>
+                                            </div>
+                                        </div>
+                                        <div class="writer center">최고관리자</div>
+                                        <div class="hit center">9,999</div>
+                                        <div class="date center">10-12</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="chk center"><input type="checkbox" /></div>
+                                        <div class="number center">9</div>
+                                        <div class="title"><a href="./view.html">제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.</a></div>
+                                        <div class="writer center">최고관리자</div>
+                                        <div class="hit center">9,999</div>
+                                        <div class="date center">10-12</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="chk center"><input type="checkbox" /></div>
+                                        <div class="number center">8</div>
+                                        <div class="title"><a href="./view.html">제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.</a></div>
+                                        <div class="writer center">최고관리자</div>
+                                        <div class="hit center">9,999</div>
+                                        <div class="date center">10-12</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="chk center"><input type="checkbox" /></div>
+                                        <div class="number center">7</div>
+                                        <div class="title"><a href="./view.html">제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.</a></div>
+                                        <div class="writer center">최고관리자</div>
+                                        <div class="hit center">9,999</div>
+                                        <div class="date center">10-12</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="chk center"><input type="checkbox" /></div>
+                                        <div class="number center">6</div>
+                                        <div class="title"><a href="./view.html">제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.</a></div>
+                                        <div class="writer center">최고관리자</div>
+                                        <div class="hit center">9,999</div>
+                                        <div class="date center">10-12</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="chk center"><input type="checkbox" /></div>
+                                        <div class="number center">5</div>
+                                        <div class="title"><a href="./view.html">제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.</a></div>
+                                        <div class="writer center">최고관리자</div>
+                                        <div class="hit center">9,999</div>
+                                        <div class="date center">10-12</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="chk center"><input type="checkbox" /></div>
+                                        <div class="number center">4</div>
+                                        <div class="title"><a href="./view.html">제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.</a></div>
+                                        <div class="writer center">최고관리자</div>
+                                        <div class="hit center">9,999</div>
+                                        <div class="date center">10-12</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="chk center"><input type="checkbox" /></div>
+                                        <div class="number center">3</div>
+                                        <div class="title"><a href="./view.html">제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.</a></div>
+                                        <div class="writer center">최고관리자</div>
+                                        <div class="hit center">9,999</div>
+                                        <div class="date center">10-12</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="chk center"><input type="checkbox" /></div>
+                                        <div class="number center">2</div>
+                                        <div class="title"><a href="./view.html">제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.</a></div>
+                                        <div class="writer center">최고관리자</div>
+                                        <div class="hit center">9,999</div>
+                                        <div class="date center">10-12</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="chk center"><input type="checkbox" /></div>
+                                        <div class="number center">1</div>
+                                        <div class="title"><a href="./view.html">제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.</a></div>
+                                        <div class="writer center">최고관리자</div>
+                                        <div class="hit center">9,999</div>
+                                        <div class="date center">10-12</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </main>
+
+                <footer id="footer">
+                    <div class="footer-inner">
+                        <div class="footer-top">
+                            <div class="footer-logo">
+                                <a href="./index.html">
+                                    <img src="./img/common/logo-white.svg" alt="JB법무법인">
+                                </a>
+                            </div>
+                            <nav class="footer-menu">
+                                <a href="#" class="privacy-link">개인정보처리방침</a>
+                                <a href="#contact">문의하기</a>
+                                <a href="#blog">블로그</a>
+                            </nav>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="business-info">
+                                <h3 class="business-info-title">Business Info</h3>
+                                <p class="business-info-address">서울특별시 금천구 가산디지털2로 173, 11층 1117호</p>
+                                <p class="business-info-registration">사업자 등록번호 : 457-15-018-16</p>
+                                <p class="business-info-email">E-mail : jobofbrothers@naver.com</p>
+                            </div>
+                            <div class="kakao-channel-wrapper">
+                                <div class="kakao-channel">
+                                    <img src="./img/footer/kakao.svg" alt="카카오톡">
+                                    <span class="kakao-channel-name">카카오톡 채널 'JobofBrothers'</span>
+                                </div>
+                                <div class="customer-service">
+                                    <span class="customer-service-phone">고객센터 0507-1409-9559</span>
+                                    <div class="customer-service-time">
+                                        <span>[평일] 오전 9시 ~ 오후 6시</span>
+                                        <span>[점심시간] 오후 12시 ~ 1시</span>
+                                    </div>
+                                </div>
+                                <p class="footer-copyright">© JOB Of Brothers All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </article>
+        </main>
+        
+        <!--개인정보처리방침 팝업-->
+        <section class="privacyPopup" id="privacyPopup">
+            <div class="inner">
+                <div class="contentWrap">
+                    <div class="titleBox">
+                        <span>개인정보 처리방침</span>
+                        <img src="./img/common/close-btn.png" alt="closeBtn" class="closeBtn">
+                    </div>
+                    <div class="contentBox">
+                        해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

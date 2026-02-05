@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!-- 패럴렉스 -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/common/logo.svg" alt="JB법무법인">
+                    </a>
+                </div>
+                <nav class="gnb">
+                    <ul class="gnb-list">
+                        <li><a href="#necessity">필요성</a></li>
+                        <li><a href="#difference">차별성</a></li>
+                        <li><a href="#portfolio">포트폴리오</a></li>
+                        <li><a href="#development">개발과정</a></li>
+                        <li><a href="#maintenance">유지보수 게시판</a></li>
+                        <li><span>개인 결제</span></li>
+                        <li><a href="#contact">문의하기</a></li>
+                    </ul>
+                    <button class="mobile-menu-btn" aria-label="메뉴 열기">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-menu-list">
+                <li><a href="#necessity">필요성</a></li>
+                <li><a href="#difference">차별성</a></li>
+                <li><a href="#portfolio">포트폴리오</a></li>
+                <li><a href="#development">개발과정</a></li>
+                <li><a href="#maintenance">유지보수 게시판</a></li>
+                <li><span>개인 결제</span></li>
+                <li><a href="#contact">문의하기</a></li>
+            </ul>
+        </div>
+        <main id="smooth-wrapper">
+            <article id="smooth-content">
+                
+                <main class="sec_top">
+                    <section class="boardArti boardViewArti">
+                        <div class="inner">
+                            <div class="boardBanner">
+                                <div class="t1">Apply</div>
+                                <div class="t2">문의</div>
+                            </div>
+                            
+                            <article class="infoBoxWrap">
+                                <ul class="infoBoxList">
+                                    <li class="full">
+                                        <div class="infoBox">
+                                            <div class="label">제목</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">
+                                                    제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="infoBox">
+                                            <div class="label">이름</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">
+                                                    최고관리자
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="infoBox">
+                                            <div class="label">조회</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">
+                                                    9,999
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="infoBox">
+                                            <div class="label">날짜</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">
+                                                    20-05-18 13:22
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                  
+                                </ul>
+                            </article>
+            
+                            <div class="menuBox">
+                                <ul class="menuList">
+                                    <li>
+                                        <a href="./basicList.html" class="item"><img src="./img/boardImg/list.png" alt="목록"/> <p class="txt">목록</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item"><img src="./img/boardImg/corner-up-left.png" alt="답변"/> <p class="txt">답변</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="./write.html" class="item"><img src="./img/boardImg/write.png" alt="글쓰기"/> <p class="txt">글쓰기</p></a>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="item"><img src="./img/boardImg/threedot.png" alt="편집"/> <p class="txt">편집</p></button>
+                                        <ul class="subMenu">
+                                            <li><a href="#" class="item2">수정</a></li>
+                                            <li><a href="#" class="item2">삭제</a></li>
+                                            <li><a href="#" class="item2">복사</a></li>
+                                            <li><a href="#" class="item2">이동</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+            
+                            <article class="viewContent">
+                                어떤 디자이너들은 명쾌한 방법론을 갈망하는 한편, 어떤 디자이너들은 창의적인 발상을 제약하는 사고 방식이라며 발끈하기도 한다. <br/>
+                                하지만, 혼란스럽거나 즉흥적인 접근 방식은 바람직하다고 이야기하기 어렵다. <br/>
+                                여기서 설명하고 있는 방법론은 제약적인 프로세스라기보다는 모든 상황에서 따라 할 수 있는 조리법처럼 받아들여지기를 바란다. <br/>
+                                하지만 기계적으로 따라야만 하는 방법은 없다. <br/>
+                                디자이너의 창의적인 번뜩임은 전기와 같고 그 방법은 전기를 가장 잘 이용할 수 있는 곳으로 전달하는 전력망 이라고 상상해보자.
+                            </article>
+            
+                            <article class="viewAddArti">
+                                <a href="#">
+                                    <div class="item file">
+                                        <p class="t1">File.jpeg(741.5K)</p>
+                                        <p class="t2">1회 다운로드 | DATE : 2020-05-05- 17:05:20</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="item link">
+                                        <p class="t1">http://www.link.com</p>
+                                        <p class="t2">34회 연결</p>
+                                    </div>
+                                </a>
+                            </article>
+            
+                            <article class="prevNextArti">
+                                <div class="item">
+                                    <div class="label">
+                                        <img src="./img/boardImg/chevron-up.png" alt="이전글" />
+                                        이전글
+                                    </div>
+                                    <div class="titleBox">
+                                        <a href="#">
+                                            이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.
+                                            이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="label">
+                                        <img src="./img/boardImg/chevron-down.png" alt="다음글" />
+                                        다음글
+                                    </div>
+                                    <div class="titleBox">
+                                        <a href="#">
+                                            다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.
+                                            다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+            
+                        </div>
+                    </section>
+                </main>
+                
+                <footer id="footer">
+                    <div class="footer-inner">
+                        <div class="footer-top">
+                            <div class="footer-logo">
+                                <a href="./index.html">
+                                    <img src="./img/common/logo-white.svg" alt="JB법무법인">
+                                </a>
+                            </div>
+                            <nav class="footer-menu">
+                                <a href="#" class="privacy-link">개인정보처리방침</a>
+                                <a href="#contact">문의하기</a>
+                                <a href="#blog">블로그</a>
+                            </nav>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="business-info">
+                                <h3 class="business-info-title">Business Info</h3>
+                                <p class="business-info-address">서울특별시 금천구 가산디지털2로 173, 11층 1117호</p>
+                                <p class="business-info-registration">사업자 등록번호 : 457-15-018-16</p>
+                                <p class="business-info-email">E-mail : jobofbrothers@naver.com</p>
+                            </div>
+                            <div class="kakao-channel-wrapper">
+                                <div class="kakao-channel">
+                                    <img src="./img/footer/kakao.svg" alt="카카오톡">
+                                    <span class="kakao-channel-name">카카오톡 채널 'JobofBrothers'</span>
+                                </div>
+                                <div class="customer-service">
+                                    <span class="customer-service-phone">고객센터 0507-1409-9559</span>
+                                    <div class="customer-service-time">
+                                        <span>[평일] 오전 9시 ~ 오후 6시</span>
+                                        <span>[점심시간] 오후 12시 ~ 1시</span>
+                                    </div>
+                                </div>
+                                <p class="footer-copyright">© JOB Of Brothers All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </article>
+        </main>
+        
+        <!--개인정보처리방침 팝업-->
+        <section class="privacyPopup" id="privacyPopup">
+            <div class="inner">
+                <div class="contentWrap">
+                    <div class="titleBox">
+                        <span>개인정보 처리방침</span>
+                        <img src="./img/common/close-btn.png" alt="closeBtn" class="closeBtn">
+                    </div>
+                    <div class="contentBox">
+                        해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
