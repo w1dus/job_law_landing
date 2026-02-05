@@ -594,7 +594,7 @@ document.addEventListener("DOMContentLoaded", function(e){
     function initScrollAnimation(selector, options = {}) {
         const {
             delay = 0,
-            duration = 0.6,
+            duration = 1.0,
             y = 30,
             start = 'top 90%',
             stagger = 0.1
