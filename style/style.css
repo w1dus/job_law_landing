@@ -1086,7 +1086,7 @@ p { word-break: keep-all; overflow-wrap: break-word; }
 }
 
 /* 포트폴리오 디자인 래퍼 */
-.portfolio .portfolio-design-wrapper { position: relative; background-image: url('../img/portfolio/onjo_family/section-background.jpg'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat; }
+.portfolio .portfolio-design-wrapper { position: relative; background-image: url('../img/portfolio/onjo_family/section-background.png'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat; }
 /* 포트폴리오 컨셉 섹션 */
 .portfolio .portfolio-concept-section { padding: 120px 0 60px 0; }
 .portfolio .portfolio-concept-section .inner { width: 1200px; margin: 0 auto; padding: 0; }
