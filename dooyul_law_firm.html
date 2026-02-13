@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!-- 패럴렉스 -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    </head>
+    <body>
+        <header id="header" class="portfolio-header">
+            <div class="header-inner">
+                <a href="./index.html" class="portfolio-header-back">
+                    <img src="./img/portfolio/header/prev-icon.svg" alt="이전">
+                    <span>메인으로</span>
+                </a>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/common/logo.svg" alt="JB법무법인">
+                    </a>
+                </div>
+                <div class="portfolio-header-right"></div>
+            </div>
+        </header>
+        <main id="smooth-wrapper">
+            <article id="smooth-content">
+                <main class="portfolio sub sec_top">
+                    <style>
+                        @font-face {
+                            font-family: 'KoPub Batang';
+                            font-weight: 300;
+                            font-style: normal;
+                            font-display: swap;
+                            src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang-Light.woff2') format('woff2'),
+                                url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang-Light.woff') format('woff'),
+                                url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang-Light.otf') format('opentype'),
+                                url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang-Light.ttf') format('truetype');
+                        }
+                        @font-face {
+                            font-family: 'KoPub Batang';
+                            font-weight: 500;
+                            font-style: normal;
+                            font-display: swap;
+                            src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang-Medium.woff2') format('woff2'),
+                                url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang-Medium.woff') format('woff'),
+                                url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang-Medium.otf') format('opentype'),
+                                url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang-Medium.ttf') format('truetype');
+                        }
+                        @font-face {
+                            font-family: 'KoPub Batang';
+                            font-weight: 700;
+                            font-style: normal;
+                            font-display: swap;
+                            src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang-Bold.woff2') format('woff2'),
+                                url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang-Bold.woff') format('woff'),
+                                url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang-Bold.otf') format('opentype'),
+                                url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang-Bold.ttf') format('truetype');
+                        }
+                    </style>
+                    <section class="portfolio-banner-section" style="background-image: url('./img/portfolio/dooyul_law_firm/banner-background.jpg');">
+                        <div class="inner">
+                            <div class="portfolio-banner-content">
+                                <div class="portfolio-banner-left">
+                                    <div class="portfolio-banner-logo">
+                                        <img src="./img/portfolio/dooyul_law_firm/logo.png" alt="법무법인 한설 로고">
+                                    </div>
+                                    <h1 class="portfolio-banner-title">
+                                        법무법인 모먼트 홈페이지 
+                                        <br/>리뉴얼 프로젝트
+                                    </h1>
+                                    <p class="portfolio-banner-description">
+                                        단순한 정보 전달을 넘어,<br/>
+                                        사건의 맥락과 전략적 판단이 단계적으로 드러나도록 재구성한 법무법인 모먼트 홈페이지 리뉴얼 작업
+                                    </p>
+                                    <div class="portfolio-banner-info">
+                                        <div class="portfolio-banner-info-item">
+                                            <span class="portfolio-banner-info-label">Type</span>
+                                            <span class="portfolio-banner-info-value">반응형 홈페이지</span>
+                                        </div>
+                                        <div class="portfolio-banner-info-item">
+                                            <span class="portfolio-banner-info-label">Keyword</span>
+                                            <span class="portfolio-banner-info-value">실무성 · 책임감 · 명확함</span>
+                                        </div>
+                                        <div class="portfolio-banner-info-item">
+                                            <span class="portfolio-banner-info-label">site</span>
+                                            <span class="portfolio-banner-info-value"><a href="https://dooyul.co.kr/" target="_blank">https://dooyul.co.kr/</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-banner-right">
+                                    <img src="./img/portfolio/dooyul_law_firm/banner-content.jpg" alt="법무법인 모먼트 배너 콘텐츠" class="portfolio-banner-image">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-direction-section">
+                        <div class="inner">
+                            <div class="portfolio-direction-content">
+                                <div class="portfolio-direction-left">
+                                    <h2 class="portfolio-direction-title">Before</h2>
+                                    <div class="portfolio-direction-item">
+                                        <h3 class="portfolio-direction-item-title">Design</h3>
+                                        <div class="portfolio-direction-item-content">
+                                            <ul class="portfolio-direction-item-list">
+                                                <li>정보는 많지만 ‘실제 대응 방식’이 보이지 않는 구성</li>
+                                                <li>설명 위주의 화면 배치</li>
+                                                <li>현장감 부족한 시각 톤</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-direction-divider"></div>
+                                    <div class="portfolio-direction-item">
+                                        <h3 class="portfolio-direction-item-title">Develop</h3>
+                                        <div class="portfolio-direction-item-content">
+                                            <ul class="portfolio-direction-item-list">
+                                                <li>실무형 콘텐츠 확장에 불리한 구조</li>
+                                                <li>절차 안내와 사건 설명이 페이지마다 개별 관리되어 수정 시 동일 작업이 반복되는 구조</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-direction-right">
+                                    <h2 class="portfolio-direction-title portfolio-direction-title-blue">After</h2>
+                                    <div class="portfolio-direction-item">
+                                        <h3 class="portfolio-direction-item-title portfolio-direction-item-title-blue">Design</h3>
+                                        <div class="portfolio-direction-item-content">
+                                            <ul class="portfolio-direction-item-list">
+                                                <li>섹션 구성만으로 자연스럽게 이해되도록 레이아웃 재정비</li>
+                                                <li>사용자가 자신의 상황을 대입해 볼 수 있도록 콘텐츠를 설명 단위가 아닌 ‘사건 단계’ 기준으로 재구성</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-direction-divider"></div>
+                                    <div class="portfolio-direction-item">
+                                        <h3 class="portfolio-direction-item-title portfolio-direction-item-title-blue">Develop</h3>
+                                        <div class="portfolio-direction-item-content">
+                                            <ul class="portfolio-direction-item-list">
+                                                <li>‘사건 단계·대응 방식·안내 콘텐츠를 공통 구조로 관리해 운영과 업데이트가 빠르게 이루어지도록 개선</li>
+                                                <li>기존 구조를 유지한 채 확장 가능한 방식으로 재정비</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-device-section">
+                        <div class="inner">
+                            <div class="portfolio-device-header">
+                                <h2 class="portfolio-device-title">
+                                    Device
+                                    <span class="portfolio-device-dot"></span>
+                                </h2>
+                            </div>
+                            <p class="portfolio-device-description">
+                                PC, 태블릿, 모바일 등 모든 디바이스 환경에서도 동일한 정보 흐름과 사용성을 유지하도록 반응형으로 설계했습니다.
+                            </p>
+                            <div class="portfolio-device-images">
+                                <img src="./img/portfolio/dooyul_law_firm/device-pc.png" alt="PC" class="portfolio-device-image portfolio-device-pc">
+                                <img src="./img/portfolio/dooyul_law_firm/device-tablet.png" alt="태블릿" class="portfolio-device-image portfolio-device-tablet">
+                                <img src="./img/portfolio/dooyul_law_firm/device-mobile.png" alt="모바일" class="portfolio-device-image portfolio-device-mobile">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-design-section">
+                        <div class="inner">
+                            <div class="portfolio-design-content">
+                                <div class="portfolio-design-left">
+                                    <h2 class="portfolio-design-title">
+                                        Color
+                                        <span class="portfolio-design-dot"></span>
+                                    </h2>
+                                    <div class="portfolio-color-list">
+                                        <div class="portfolio-color-item"  style="background-color: #473D33;">
+                                            <div class="portfolio-color-circle" style="background-color: #635548;"></div>
+                                            <div class="portfolio-color-info">
+                                                <span class="portfolio-color-name">Dark Brown</span>
+                                                <span class="portfolio-color-hex">HEX  #473D33</span>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-color-item" style="background-color: #F5F1ED;">
+                                            <div class="portfolio-color-circle" style="background-color: #E5E1DC;"></div>
+                                            <div class="portfolio-color-info">
+                                                <span class="portfolio-color-name" style="color: #000;">Pure White</span>
+                                                <span class="portfolio-color-hex" style="color: #000;">HEX  #E5E1DC</span>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-color-item" style="background-color:#2A2A2A;">
+                                            <div class="portfolio-color-circle" style="background-color: #454545;"></div>
+                                            <div class="portfolio-color-info">
+                                                <span class="portfolio-color-name">Charcoal Gray</span>
+                                                <span class="portfolio-color-hex">HEX  #2A2A2A</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-design-right">
+                                    <h2 class="portfolio-design-title">
+                                        Typo
+                                        <span class="portfolio-design-dot"></span>
+                                    </h2>
+                                    <div class="portfolio-design-divider"></div>
+                                    <div class="portfolio-font-name" style="font-family: 'KoPub Batang';">KoPubBatang</div>
+                                    <div class="portfolio-type-wrapper">
+                                        <div class="portfolio-type-left">
+                                            <div class="portfolio-type-names">
+                                                <span class="portfolio-type-name">Medium</span>
+                                            </div>
+                                            <div class="portfolio-type-weights">
+                                                <span class="portfolio-type-weight">500</span>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-type-right">
+                                            <p class="portfolio-type-text" style="font-family: 'KoPub Batang';">LAW FIRM DOOYUL</p>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-design-divider"></div>
+                                    <div class="portfolio-font-name">Pretendard</div>
+                                    <div class="portfolio-type-wrapper">
+                                        <div class="portfolio-type-left">
+                                            <div class="portfolio-type-names">
+                                                <span class="portfolio-type-name">Regular,Medium,Bold</span>
+                                            </div>
+                                            <div class="portfolio-type-weights">
+                                                <span class="portfolio-type-weight">400</span>
+                                                <span class="portfolio-type-weight">500</span>
+                                                <span class="portfolio-type-weight">700</span>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-type-right">
+                                            <p class="portfolio-type-text">법의 기준으로 사건을 재단하는 두율</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-design-wrapper" style="background-image: url('./img/portfolio/dooyul_law_firm/section-background.png');">
+                        <div class="portfolio-concept-section">
+                            <div class="inner">
+                                <h2 class="portfolio-concept-title">
+                                    Design Concept
+                                    <span class="portfolio-concept-dot"></span>
+                                </h2>
+                                <div class="portfolio-concept-content">
+                                    <p class="portfolio-concept-subtitle">필요한 정보에 빠르게 도달하는 디자인</p>
+                                    <p class="portfolio-concept-text">
+                                        법무법인 모먼트는 사용자가 오래 고민하지 않아도<br/>
+                                        지금 필요한 정보에 빠르게 도달할 수 있도록 구성했습니다.<br/>
+                                        절차와 대응 흐름을 기준으로 화면을 정리해 복잡한 법률 상황에서도 <br/>
+                                        핵심을 빠르게 파악할 수 있도록 구성하여<br/>
+                                        실무 중심 로펌의 성격을 잘 드러내는 디자인 방향을 담았습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-overview-section">
+                            <div class="inner">
+                                <h2 class="portfolio-overview-title">
+                                    Design Overview
+                                    <span class="portfolio-overview-dot"></span>
+                                </h2>
+                                <div class="portfolio-overview-image-wrapper">
+                                    <img src="./img/portfolio/dooyul_law_firm/main-page.jpg" alt="메인 페이지" class="portfolio-overview-image">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-images-section">
+                        <div class="inner">
+                            <div class="portfolio-images-content">
+                                <div class="portfolio-images-left">
+                                    <img src="./img/portfolio/dooyul_law_firm/left-1.jpg" alt="이미지 1" class="portfolio-image-item">
+                                    <img src="./img/portfolio/dooyul_law_firm/left-2.jpg" alt="이미지 2" class="portfolio-image-item">
+                                </div>
+                                <div class="portfolio-images-divider"></div>
+                                <div class="portfolio-images-right">
+                                    <img src="./img/portfolio/dooyul_law_firm/right-1.jpg" alt="이미지 3" class="portfolio-image-item">
+                                    <img src="./img/portfolio/dooyul_law_firm/right-2.jpg" alt="이미지 4" class="portfolio-image-item">
+                                    <img src="./img/portfolio/dooyul_law_firm/right-3.jpg" alt="이미지 4" class="portfolio-image-item">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-back-section">
+                        <div class="inner">
+                            <a href="./index.html" class="portfolio-back-btn">Back to List</a>
+                        </div>
+                    </section>
+                </main>
+                <footer id="footer">
+                    <div class="footer-inner">
+                        <div class="footer-top">
+                            <div class="footer-logo">
+                                <a href="./index.html">
+                                    <img src="./img/common/logo-white.svg" alt="JB법무법인">
+                                </a>
+                            </div>
+                            <nav class="footer-menu">
+                                <a href="#" class="privacy-link">개인정보처리방침</a>
+                                <a href="#contact">문의하기</a>
+                                <a href="#blog">블로그</a>
+                            </nav>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="business-info">
+                                <h3 class="business-info-title">Business Info</h3>
+                                <p class="business-info-address">서울특별시 금천구 가산디지털2로 173, 11층 1117호</p>
+                                <p class="business-info-registration">사업자 등록번호 : 457-15-018-16</p>
+                                <p class="business-info-email">E-mail : jobofbrothers@naver.com</p>
+                            </div>
+                            <div class="kakao-channel-wrapper">
+                                <div class="kakao-channel">
+                                    <img src="./img/footer/kakao.svg" alt="카카오톡">
+                                    <span class="kakao-channel-name">카카오톡 채널 'JobofBrothers'</span>
+                                </div>
+                                <div class="customer-service">
+                                    <span class="customer-service-phone">고객센터 0507-1409-9559</span>
+                                    <div class="customer-service-time">
+                                        <span>[평일] 오전 9시 ~ 오후 6시</span>
+                                        <span>[점심시간] 오후 12시 ~ 1시</span>
+                                    </div>
+                                </div>
+                                <p class="footer-copyright">© JOB Of Brothers All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </article>
+        </main>
+        
+        <!--개인정보처리방침 팝업-->
+        <section class="privacyPopup" id="privacyPopup">
+            <div class="inner">
+                <div class="contentWrap">
+                    <div class="titleBox">
+                        <span>개인정보 처리방침</span>
+                        <img src="./img/common/close-btn.png" alt="closeBtn" class="closeBtn">
+                    </div>
+                    <div class="contentBox">
+                        해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>
