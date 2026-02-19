@@ -1115,6 +1115,7 @@ p { word-break: keep-all; overflow-wrap: break-word; }
     .portfolio .portfolio-concept-dot { width: 4px; height: 4px; }
     .portfolio .portfolio-concept-content { gap: 16px; } 
     .portfolio .portfolio-concept-subtitle { font-size: 16px; } 
+    .portfolio .portfolio-concept-subtitle br{ display: none; }
     .portfolio .portfolio-concept-text { font-size: 14px; line-height: 1.6; }
     .portfolio .portfolio-concept-text br { display: none; } 
 }
