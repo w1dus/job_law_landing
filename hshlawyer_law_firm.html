@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!-- 패럴렉스 -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    </head>
+    <body>
+        <header id="header" class="portfolio-header">
+            <div class="header-inner">
+                <a href="./index.html" class="portfolio-header-back">
+                    <img src="./img/portfolio/header/prev-icon.svg" alt="이전">
+                    <span>메인으로</span>
+                </a>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/common/logo.svg" alt="JB법무법인">
+                    </a>
+                </div>
+                <div class="portfolio-header-right"></div>
+            </div>
+        </header>
+        <main id="smooth-wrapper">
+            <article id="smooth-content">
+                <main class="portfolio sub sec_top">
+                    <style>
+                        @import url('https://cdn.jsdelivr.net/gh/fonts-archive/GmarketSans/GmarketSans.css');
+                    </style>
+                    <section class="portfolio-banner-section" style="background-image: url('./img/portfolio/99law_law_firm/banner-background.jpg');">
+                        <div class="inner">
+                            <div class="portfolio-banner-content">
+                                <div class="portfolio-banner-left">
+                                    <div class="portfolio-banner-logo">
+                                        <img src="./img/portfolio/99law_law_firm/logo.png" alt="로고">
+                                    </div>
+                                    <h1 class="portfolio-banner-title">
+                                        법무법인 99 LAW 홈페이지 <br/>
+                                        리뉴얼 프로젝트
+                                    </h1>
+                                    <p class="portfolio-banner-description">
+                                        이용 방식과 비용 구조가 즉시 이해되도록 콘텐츠를 재구성하고설명보다 선택 기준이 먼저 보이도록 정보 흐름을 정리한 법무법인 99LAW 디지털 서비스 프로젝트
+                                    </p>
+                                    <div class="portfolio-banner-info">
+                                        <div class="portfolio-banner-info-item">
+                                            <span class="portfolio-banner-info-label">Type</span>
+                                            <span class="portfolio-banner-info-value">반응형 홈페이지</span>
+                                        </div>
+                                        <div class="portfolio-banner-info-item">
+                                            <span class="portfolio-banner-info-label">Keyword</span>
+                                            <span class="portfolio-banner-info-value">명확성 · 구조화 · 직관성</span>
+                                        </div>
+                                        <!-- <div class="portfolio-banner-info-item">
+                                            <span class="portfolio-banner-info-label">Site</span>
+                                            <span class="portfolio-banner-info-value"><a href="https://99law.co.kr/" target="_blank">https://99law.co.kr/</a></span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="portfolio-banner-right">
+                                    <img src="./img/portfolio/99law_law_firm/banner-content.jpg" alt="배너 콘텐츠" class="portfolio-banner-image">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-direction-section">
+                        <div class="inner">
+                            <div class="portfolio-direction-content">
+                                <div class="portfolio-direction-left">
+                                    <h2 class="portfolio-direction-title">Before</h2>
+                                    <div class="portfolio-direction-item">
+                                        <h3 class="portfolio-direction-item-title">Design</h3>
+                                        <div class="portfolio-direction-item-content">
+                                            <ul class="portfolio-direction-item-list">
+                                                <li>상담, 비용, 절차 정보가 분산돼 있어 사용자가 전체 흐름을 한 번에 이해하기 어려운 구조</li>
+                                                <li>설명 중심의 콘텐츠 배치</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-direction-divider"></div>
+                                    <div class="portfolio-direction-item">
+                                        <h3 class="portfolio-direction-item-title">Develop</h3>
+                                        <div class="portfolio-direction-item-content">
+                                            <ul class="portfolio-direction-item-list">
+                                                <li>여러 페이지를 이동해야 핵심 정보에 도달해 전환 흐름이 길어지는 구조</li>
+                                                <li>모바일 환경에서의 선택성 부족</li>
+                                                <li>서비스 관리 기준이 명확하지 않은 구조</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-direction-right">
+                                    <h2 class="portfolio-direction-title portfolio-direction-title-blue">After</h2>
+                                    <div class="portfolio-direction-item">
+                                        <h3 class="portfolio-direction-item-title portfolio-direction-item-title-blue">Design</h3>
+                                        <div class="portfolio-direction-item-content">
+                                            <ul class="portfolio-direction-item-list">
+                                                <li>든 서비스가 동일한 규칙과 흐름으로 구성돼 사용자가 익숙한 방식으로 빠르게 선택 가능</li>
+                                                <li>설명보다 기준이 먼저 보이는 정보 설계</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-direction-divider"></div>
+                                    <div class="portfolio-direction-item">
+                                        <h3 class="portfolio-direction-item-title portfolio-direction-item-title-blue">Develop</h3>
+                                        <div class="portfolio-direction-item-content">
+                                            <ul class="portfolio-direction-item-list">
+                                                <li>불필요한 이동을 제거하고 핵심 행동이 끊기지 않도록 사용자 흐름을 통합</li>
+                                                <li>서비스 단위 운영이 가능한 구조 설계</li>
+                                                <li>모바일 환경에서도 동일한 선택 경험 제공</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-device-section">
+                        <div class="inner">
+                            <div class="portfolio-device-header">
+                                <h2 class="portfolio-device-title">
+                                    Device
+                                    <span class="portfolio-device-dot"></span>
+                                </h2>
+                            </div>
+                            <p class="portfolio-device-description">
+                                PC, 태블릿, 모바일 등 모든 디바이스 환경에서도 동일한 정보 흐름과 사용성을 유지하도록 반응형으로 설계했습니다.
+                            </p>
+                            <div class="portfolio-device-images">
+                                <img src="./img/portfolio/99law_law_firm/device-pc.png" alt="PC" class="portfolio-device-image portfolio-device-pc">
+                                <img src="./img/portfolio/99law_law_firm/device-tablet.png" alt="태블릿" class="portfolio-device-image portfolio-device-tablet">
+                                <img src="./img/portfolio/99law_law_firm/device-mobile.png" alt="모바일" class="portfolio-device-image portfolio-device-mobile">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-design-section">
+                        <div class="inner">
+                            <div class="portfolio-design-content">
+                                <div class="portfolio-design-left">
+                                    <h2 class="portfolio-design-title">
+                                        Color
+                                        <span class="portfolio-design-dot"></span>
+                                    </h2>
+                                    <div class="portfolio-color-list">
+                                        <div class="portfolio-color-item" style="background-color: #C33027;">
+                                            <div class="portfolio-color-circle" style="background-color: #D6574F;"></div>
+                                            <div class="portfolio-color-info">
+                                                <span class="portfolio-color-name">Deep Navy</span>
+                                                <span class="portfolio-color-hex">HEX  #C33027</span>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-color-item" style="background-color: #3F6089;">
+                                            <div class="portfolio-color-circle" style="background-color: #304B6C;"></div>
+                                            <div class="portfolio-color-info">
+                                                <span class="portfolio-color-name" style="color: #fff;">Deep Blue</span>
+                                                <span class="portfolio-color-hex" style="color: #fff;">HEX  #3F6089</span>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-color-item" style="background-color:#fff;">
+                                            <div class="portfolio-color-circle" style="background-color: #EAEAEA;"></div>
+                                            <div class="portfolio-color-info">
+                                                <span class="portfolio-color-name" style="color:#222;">Pure White</span>
+                                                <span class="portfolio-color-hex" style="color:#222;">HEX  #FFFFFF</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-design-right">
+                                    <h2 class="portfolio-design-title">
+                                        Typo
+                                        <span class="portfolio-design-dot"></span>
+                                    </h2>
+                                    <div class="portfolio-design-divider"></div>
+                                    <div class="portfolio-font-name" style="font-family: 'Gmarket Sans', sans-serif;">Gmarket Sans</div>
+                                    <div class="portfolio-type-wrapper">
+                                        <div class="portfolio-type-left" style="font-family: 'Gmarket Sans', sans-serif;">
+                                            <div class="portfolio-type-names">
+                                                <span class="portfolio-type-name">Regular,Medium,Bold</span>
+                                            </div>
+                                            <div class="portfolio-type-weights">
+                                                <span class="portfolio-type-weight">400</span>
+                                                <span class="portfolio-type-weight">500</span>
+                                                <span class="portfolio-type-weight">700</span>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-type-right">
+                                            <p class="portfolio-type-text">99,000원으로 법무법인 99LAW</p>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-design-divider"></div>
+                                    <div class="portfolio-font-name">Pretendard</div>
+                                    <div class="portfolio-type-wrapper">
+                                        <div class="portfolio-type-left">
+                                            <div class="portfolio-type-names">
+                                                <span class="portfolio-type-name">Regular,Medium,Bold</span>
+                                            </div>
+                                            <div class="portfolio-type-weights">
+                                                <span class="portfolio-type-weight">400</span>
+                                                <span class="portfolio-type-weight">500</span>
+                                                <span class="portfolio-type-weight">700</span>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-type-right">
+                                            <p class="portfolio-type-text"> 성범죄피해자 변호센터, 치유의 봄</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-design-wrapper" style="background-image: url('./img/portfolio/99law_law_firm/section-background.png');">
+                        <div class="portfolio-concept-section">
+                            <div class="inner">
+                                <h2 class="portfolio-concept-title">
+                                    Design Concept
+                                    <span class="portfolio-concept-dot"></span>
+                                </h2>
+                                <div class="portfolio-concept-content">
+                                    <p class="portfolio-concept-subtitle">상담 경험을 시스템으로 전환한 법률 서비스 디자인</p>
+                                    <p class="portfolio-concept-text">
+                                        비용, 시간, 절차를 명확하게 구조화해<br/>
+                                        사용자가 고민하지 않고 바로 판단할 수 있도록 설계했습니다.<br/>
+                                        상담부터 결제까지 흐름을 단순화한<br/>
+                                        법무법인 99LAW 디지털 서비스 프로젝트입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-overview-section">
+                            <div class="inner">
+                                <h2 class="portfolio-overview-title">
+                                    Design Overview
+                                    <span class="portfolio-overview-dot"></span>
+                                </h2>
+                                <div class="portfolio-overview-image-wrapper">
+                                    <img src="./img/portfolio/99law_law_firm/main-page.jpg" alt="메인 페이지" class="portfolio-overview-image">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-images-section">
+                        <div class="inner">
+                            <div class="portfolio-images-content">
+                                <div class="portfolio-images-left">
+                                    <img src="./img/portfolio/99law_law_firm/left-1.jpg" alt="이미지 1" class="portfolio-image-item">
+                                    <img src="./img/portfolio/99law_law_firm/left-2.jpg" alt="이미지 2" class="portfolio-image-item">
+                                </div>
+                                <div class="portfolio-images-divider"></div>
+                                <div class="portfolio-images-right">
+                                    <img src="./img/portfolio/99law_law_firm/right-1.jpg" alt="이미지 3" class="portfolio-image-item">
+                                    <img src="./img/portfolio/99law_law_firm/right-2.jpg" alt="이미지 4" class="portfolio-image-item">
+                                    <img src="./img/portfolio/99law_law_firm/right-3.jpg" alt="이미지 5" class="portfolio-image-item">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-back-section">
+                        <div class="inner">
+                            <a href="./index.html" class="portfolio-back-btn">Back to List</a>
+                        </div>
+                    </section>
+                </main>
+                <footer id="footer">
+                    <div class="footer-inner">
+                        <div class="footer-top">
+                            <div class="footer-logo">
+                                <a href="./index.html">
+                                    <img src="./img/common/logo-white.svg" alt="JB법무법인">
+                                </a>
+                            </div>
+                            <nav class="footer-menu">
+                                <a href="#" class="privacy-link">개인정보처리방침</a>
+                                <a href="#contact">문의하기</a>
+                                <a href="#blog">블로그</a>
+                            </nav>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="business-info">
+                                <h3 class="business-info-title">Business Info</h3>
+                                <p class="business-info-address">서울특별시 금천구 가산디지털2로 173, 11층 1117호</p>
+                                <p class="business-info-registration">사업자 등록번호 : 457-15-018-16</p>
+                                <p class="business-info-email">E-mail : jobofbrothers@naver.com</p>
+                            </div>
+                            <div class="kakao-channel-wrapper">
+                                <div class="kakao-channel">
+                                    <img src="./img/footer/kakao.svg" alt="카카오톡">
+                                    <span class="kakao-channel-name">카카오톡 채널 'JobofBrothers'</span>
+                                </div>
+                                <div class="customer-service">
+                                    <span class="customer-service-phone">고객센터 0507-1409-9559</span>
+                                    <div class="customer-service-time">
+                                        <span>[평일] 오전 9시 ~ 오후 6시</span>
+                                        <span>[점심시간] 오후 12시 ~ 1시</span>
+                                    </div>
+                                </div>
+                                <p class="footer-copyright">© JOB Of Brothers All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </article>
+        </main>
+        
+        <!--개인정보처리방침 팝업-->
+        <section class="privacyPopup" id="privacyPopup">
+            <div class="inner">
+                <div class="contentWrap">
+                    <div class="titleBox">
+                        <span>개인정보 처리방침</span>
+                        <img src="./img/common/close-btn.png" alt="closeBtn" class="closeBtn">
+                    </div>
+                    <div class="contentBox">
+                        해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>
