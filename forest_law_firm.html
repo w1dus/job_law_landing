@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!-- 패럴렉스 -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    </head>
+    <body>
+        <header id="header" class="portfolio-header">
+            <div class="header-inner">
+                <a href="./index.html" class="portfolio-header-back">
+                    <img src="./img/portfolio/header/prev-icon.svg" alt="이전">
+                    <span>메인으로</span>
+                </a>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/common/logo.svg" alt="JB법무법인">
+                    </a>
+                </div>
+                <div class="portfolio-header-right"></div>
+            </div>
+        </header>
+        <main id="smooth-wrapper">
+            <article id="smooth-content">
+                <main class="portfolio sub sec_top">
+                    <section class="portfolio-banner-section" style="background-image: url('./img/portfolio/forest_law_firm/banner-background.jpg');">
+                        <div class="inner">
+                            <div class="portfolio-banner-content">
+                                <div class="portfolio-banner-left">
+                                    <div class="portfolio-banner-logo">
+                                        <img src="./img/portfolio/forest_law_firm/logo.png" alt="로고">
+                                    </div>
+                                    <h1 class="portfolio-banner-title">
+                                        테헤란 안식의 숲 홈페이지 
+                                        <br/>신규 프로젝트
+                                    </h1>
+                                    <p class="portfolio-banner-description">
+                                        콘텐츠 전달에 집중할 수 있도록 최적화된 구현<br/>
+                                        비주얼과 콘텐츠 밀도를 절제해 안정적인 브랜드 경험을<br/>
+                                        완성한 테헤란 안식의 숲 프로젝트
+                                    </p>
+                                    <div class="portfolio-banner-info">
+                                        <div class="portfolio-banner-info-item">
+                                            <span class="portfolio-banner-info-label">Type</span>
+                                            <span class="portfolio-banner-info-value">반응형 홈페이지</span>
+                                        </div>
+                                        <div class="portfolio-banner-info-item">
+                                            <span class="portfolio-banner-info-label">Keyword</span>
+                                            <span class="portfolio-banner-info-value">안정성 · 체류성 · 저개입 UX</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-banner-right">
+                                    <img src="./img/portfolio/forest_law_firm/banner-content.jpg" alt="배너 콘텐츠" class="portfolio-banner-image">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-direction-section">
+                        <div class="inner">
+                            <div class="portfolio-direction-content">
+                                <div class="portfolio-direction-left">
+                                    <h2 class="portfolio-direction-title">Direction</h2>
+                                    <div class="portfolio-direction-item">
+                                        <h3 class="portfolio-direction-item-title">Design</h3>
+                                        <div class="portfolio-direction-item-content">
+                                            <ul class="portfolio-direction-item-list">
+                                                <li>시각적 자극을 최소화하는 화면 밀도 조절</li>
+                                                <li>컬러와 타이포를 전면에 드러내지 않고 배경처럼 작동하도록 정리해<br/>시선의 긴장을 낮추는 방향으로 설정</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-direction-divider"></div>
+                                    <div class="portfolio-direction-item">
+                                        <h3 class="portfolio-direction-item-title">Develop</h3>
+                                        <div class="portfolio-direction-item-content">
+                                            <ul class="portfolio-direction-item-list">
+                                                <li>페이지 리듬을 고려한 로딩과 전환</li>
+                                                <li>기능보다 흐름을 먼저 고려해 화면 이동이 자연스럽게 이어지도록 구성</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-direction-right">
+                                    <h2 class="portfolio-direction-title portfolio-direction-title-blue">After</h2>
+                                    <div class="portfolio-direction-item">
+                                        <h3 class="portfolio-direction-item-title portfolio-direction-item-title-blue">Design</h3>
+                                        <div class="portfolio-direction-item-content">
+                                            <ul class="portfolio-direction-item-list">
+                                                <li>시선의 속도를 늦추는 비주얼 완성</li>
+                                                <li>섹션 단위를 강조하지 않고 화면이 자연스럽게 이어지도록 구성해 스크롤 자체가 경험이 되도록 구현</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-direction-divider"></div>
+                                    <div class="portfolio-direction-item">
+                                        <h3 class="portfolio-direction-item-title portfolio-direction-item-title-blue">Develop</h3>
+                                        <div class="portfolio-direction-item-content">
+                                            <ul class="portfolio-direction-item-list">
+                                                <li>개입 없는 탐색이 가능한 UX 구조 구현</li>
+                                                <li>체류 경험을 해치지 않는 안정적 구현</li>
+                                                <li>운영 부담 없이 유지되는 단순한 구조</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-device-section">
+                        <div class="inner">
+                            <div class="portfolio-device-header">
+                                <h2 class="portfolio-device-title">
+                                    Device
+                                    <span class="portfolio-device-dot"></span>
+                                </h2>
+                            </div>
+                            <p class="portfolio-device-description">
+                                PC, 태블릿, 모바일 등 모든 디바이스 환경에서도 동일한 정보 흐름과 사용성을 유지하도록 반응형으로 설계했습니다.
+                            </p>
+                            <div class="portfolio-device-images">
+                                <img src="./img/portfolio/forest_law_firm/device-pc.png" alt="PC" class="portfolio-device-image portfolio-device-pc">
+                                <img src="./img/portfolio/forest_law_firm/device-tablet.png" alt="태블릿" class="portfolio-device-image portfolio-device-tablet">
+                                <img src="./img/portfolio/forest_law_firm/device-mobile.png" alt="모바일" class="portfolio-device-image portfolio-device-mobile">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-design-section">
+                        <div class="inner">
+                            <div class="portfolio-design-content">
+                                <div class="portfolio-design-left">
+                                    <h2 class="portfolio-design-title">
+                                        Color
+                                        <span class="portfolio-design-dot"></span>
+                                    </h2>
+                                    <div class="portfolio-color-list">
+                                        <div class="portfolio-color-item" style="background-color: #446158;">
+                                            <div class="portfolio-color-circle" style="background-color: #61897D;"></div>
+                                            <div class="portfolio-color-info">
+                                                <span class="portfolio-color-name">Forest Green</span>
+                                                <span class="portfolio-color-hex">HEX  #446158</span>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-color-item" style="background-color: #A68164;">
+                                            <div class="portfolio-color-circle" style="background-color: #CB976E;"></div>
+                                            <div class="portfolio-color-info">
+                                                <span class="portfolio-color-name" style="color: #fff;">Warm Brown</span>
+                                                <span class="portfolio-color-hex" style="color: #fff;">HEX  #A68164</span>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-color-item" style="background-color:#F4F2F1;">
+                                            <div class="portfolio-color-circle" style="background-color: #DFDDDC;"></div>
+                                            <div class="portfolio-color-info">
+                                                <span class="portfolio-color-name" style="color: #222222;">Off White</span>
+                                                <span class="portfolio-color-hex" style="color: #222222;">HEX  #F4F2F1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-design-right">
+                                    <h2 class="portfolio-design-title">
+                                        Typo
+                                        <span class="portfolio-design-dot"></span>
+                                    </h2>
+                                    <div class="portfolio-design-divider"></div>
+                                    <div class="portfolio-font-name">Pretendard</div>
+                                    <div class="portfolio-type-wrapper">
+                                        <div class="portfolio-type-left">
+                                            <div class="portfolio-type-names">
+                                                <span class="portfolio-type-name">Regular,Medium,Bold</span>
+                                            </div>
+                                            <div class="portfolio-type-weights">
+                                                <span class="portfolio-type-weight">400</span>
+                                                <span class="portfolio-type-weight">500</span>
+                                                <span class="portfolio-type-weight">700</span>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-type-right">
+                                            <p class="portfolio-type-text"> 소외되는 아이들을 위한 안식의 숲</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-design-wrapper" style="background-image: url('./img/portfolio/forest_law_firm/section-background.png');">
+                        <div class="portfolio-concept-section">
+                            <div class="inner">
+                                <h2 class="portfolio-concept-title">
+                                    Design Concept
+                                    <span class="portfolio-concept-dot"></span>
+                                </h2>
+                                <div class="portfolio-concept-content">
+                                    <p class="portfolio-concept-subtitle">속도를 낮춘 탐색 경험 중심의 공간형 디자인</p>
+                                    <p class="portfolio-concept-text">
+                                        설명과 유도를 최소화하고 여백과 이미지의 흐름으로<br/>
+                                        사용자가 스스로 머무를 수 있는 화면 리듬을 만들었습니다.<br/>
+                                        개입하지 않는 UX를 통해 안정적인 체류 경험을<br/>
+                                        구현한 테헤란 안식의 숲 프로젝트입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-overview-section">
+                            <div class="inner">
+                                <h2 class="portfolio-overview-title">
+                                    Design Overview
+                                    <span class="portfolio-overview-dot"></span>
+                                </h2>
+                                <div class="portfolio-overview-image-wrapper">
+                                    <img src="./img/portfolio/forest_law_firm/main-page.jpg" alt="메인 페이지" class="portfolio-overview-image">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-images-section">
+                        <div class="inner">
+                            <div class="portfolio-images-content">
+                                <div class="portfolio-images-left">
+                                    <img src="./img/portfolio/forest_law_firm/left-1.jpg" alt="이미지 1" class="portfolio-image-item">
+                                    <img src="./img/portfolio/forest_law_firm/left-2.jpg" alt="이미지 2" class="portfolio-image-item">
+                                </div>
+                                <div class="portfolio-images-divider"></div>
+                                <div class="portfolio-images-right">
+                                    <img src="./img/portfolio/forest_law_firm/right-1.jpg" alt="이미지 3" class="portfolio-image-item">
+                                    <img src="./img/portfolio/forest_law_firm/right-2.jpg" alt="이미지 4" class="portfolio-image-item">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-back-section">
+                        <div class="inner">
+                            <a href="./index.html" class="portfolio-back-btn">Back to List</a>
+                        </div>
+                    </section>
+                </main>
+                <footer id="footer">
+                    <div class="footer-inner">
+                        <div class="footer-top">
+                            <div class="footer-logo">
+                                <a href="./index.html">
+                                    <img src="./img/common/logo-white.svg" alt="JB법무법인">
+                                </a>
+                            </div>
+                            <nav class="footer-menu">
+                                <a href="#" class="privacy-link">개인정보처리방침</a>
+                                <a href="#contact">문의하기</a>
+                                <a href="#blog">블로그</a>
+                            </nav>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="business-info">
+                                <h3 class="business-info-title">Business Info</h3>
+                                <p class="business-info-address">서울특별시 금천구 가산디지털2로 173, 11층 1117호</p>
+                                <p class="business-info-registration">사업자 등록번호 : 457-15-018-16</p>
+                                <p class="business-info-email">E-mail : jobofbrothers@naver.com</p>
+                            </div>
+                            <div class="kakao-channel-wrapper">
+                                <div class="kakao-channel">
+                                    <img src="./img/footer/kakao.svg" alt="카카오톡">
+                                    <span class="kakao-channel-name">카카오톡 채널 'JobofBrothers'</span>
+                                </div>
+                                <div class="customer-service">
+                                    <span class="customer-service-phone">고객센터 0507-1409-9559</span>
+                                    <div class="customer-service-time">
+                                        <span>[평일] 오전 9시 ~ 오후 6시</span>
+                                        <span>[점심시간] 오후 12시 ~ 1시</span>
+                                    </div>
+                                </div>
+                                <p class="footer-copyright">© JOB Of Brothers All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </article>
+        </main>
+        
+        <!--개인정보처리방침 팝업-->
+        <section class="privacyPopup" id="privacyPopup">
+            <div class="inner">
+                <div class="contentWrap">
+                    <div class="titleBox">
+                        <span>개인정보 처리방침</span>
+                        <img src="./img/common/close-btn.png" alt="closeBtn" class="closeBtn">
+                    </div>
+                    <div class="contentBox">
+                        해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>

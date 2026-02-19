@@ -899,7 +899,7 @@ p { word-break: keep-all; overflow-wrap: break-word; }
 .portfolio .portfolio-banner-logo img { width: auto; height: auto; max-width: 200px; }
 .portfolio .portfolio-banner-title { font-size: 32px; font-weight: 700; color: var(--white-color); margin: 0; line-height: 1.4; word-break: keep-all; overflow-wrap: break-word; }
 .portfolio .portfolio-banner-title br { display: block; }
-.portfolio .portfolio-banner-description { font-size: 18px; font-weight: 400; color: #fff; margin: 0; line-height: 1.6; word-break: keep-all; overflow-wrap: break-word; }
+.portfolio .portfolio-banner-description { word-break: keep-all; font-size: 18px; font-weight: 400; color: #fff; margin: 0; line-height: 1.6; word-break: keep-all; overflow-wrap: break-word; }
 .portfolio .portfolio-banner-info { display: flex; flex-direction: column; gap: 16px; padding: 20px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
 .portfolio .portfolio-banner-info-item { display: flex; align-items: center; gap: 20px; }
 .portfolio .portfolio-banner-info-label { font-size: 16px; font-weight: 500; color: #fff; min-width: 80px; flex-shrink: 0; }
@@ -930,6 +930,7 @@ p { word-break: keep-all; overflow-wrap: break-word; }
     .portfolio .portfolio-banner-logo img { max-width: 150px; } 
     .portfolio .portfolio-banner-title { font-size: 24px; } 
     .portfolio .portfolio-banner-description { font-size: 15px; } 
+    .portfolio .portfolio-banner-description br{ display: none; }
     .portfolio .portfolio-banner-info { gap: 12px; padding: 16px 0; } 
     .portfolio .portfolio-banner-info-item { flex-direction: column; align-items: flex-start; gap: 8px; } 
     .portfolio .portfolio-banner-info-label { min-width: auto; font-size: 14px; } 
@@ -1094,7 +1095,7 @@ p { word-break: keep-all; overflow-wrap: break-word; }
 .portfolio .portfolio-concept-dot { width: 5.877px; height: 5.877px; background-color: #fff; border-radius: 50%; flex-shrink: 0; }
 .portfolio .portfolio-concept-content { display: flex; flex-direction: column; gap: 24px; }
 .portfolio .portfolio-concept-subtitle { font-size: 20px; font-weight: 700; color: #fff; margin: 0; word-break: keep-all; overflow-wrap: break-word; }
-.portfolio .portfolio-concept-text { font-size: 18px; font-weight: 400; color: #fff; margin: 0; line-height: 1.8; word-break: keep-all; overflow-wrap: break-word; }
+.portfolio .portfolio-concept-text { word-break: keep-all; font-size: 18px; font-weight: 400; color: #fff; margin: 0; line-height: 1.8; word-break: keep-all; overflow-wrap: break-word; }
 .portfolio .portfolio-concept-text br { display: block; }
 
 @media screen and (max-width: 1250px) { 
